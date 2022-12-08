@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp prod --production && gulp deploy",
-    "deploy": "gulp deploy && gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build:views": "gulp views --production",
     "build:styles": "gulp styles --production",
     "build:scripts": "gulp scripts --production",
