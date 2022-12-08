@@ -10,7 +10,8 @@
   "license": "GPL-3.0-only",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp prod --production",
+    "build": "gulp prod --production && gulp deploy",
+    "deploy": "gulp deploy && gh-pages -d build",
     "build:views": "gulp views --production",
     "build:styles": "gulp styles --production",
     "build:scripts": "gulp scripts --production",
@@ -77,6 +78,7 @@
   },
   "dependencies": {
     "dev": "^0.1.3",
+    "gh-pages": "^4.0.0",
     "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"
   },
