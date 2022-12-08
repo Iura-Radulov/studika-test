@@ -4,8 +4,9 @@
   "author": "Iuri Radulov",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iura-radulov/studika-test.git"
+    "url": "https://iura-radulov.github.io/studika-test/"
   },
+  "homepage": "https://iura-radulov.github.io/studika-test/",
   "license": "GPL-3.0-only",
   "scripts": {
     "dev": "gulp",
@@ -42,6 +43,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-debug": "^4.0.0",
     "gulp-favicons": "^3.0.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
