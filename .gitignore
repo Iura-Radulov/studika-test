@@ -5,7 +5,6 @@
 .Trashes
 .idea
 .vscode
-.github
 .env
 .yarn/cache
 .yarn/install-state.gz
@@ -13,5 +12,4 @@ ehthumbs.db
 Thumbs.db
 _config.yml
 node_modules
-dist
 package-lock.json

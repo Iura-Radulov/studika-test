@@ -10,7 +10,7 @@
   "license": "GPL-3.0-only",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp prod --production && gulp deploy",
+    "build": "gulp prod --production",
     "deploy": "gh-pages -d dist",
     "build:views": "gulp views --production",
     "build:styles": "gulp styles --production",
