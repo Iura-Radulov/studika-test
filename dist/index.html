@@ -28,13 +28,50 @@
   <body>
     <header class="header"> 
       <div class="container">
-        <div class="logo"> <a class="logo__link" href="#"> <img src="../../../img/logo.png" alt="Logo"></a></div>
-        <div class="location">      <img src="../../../img/svg/city.svg" alt="Logo">
-          <p class="location__title">Москва</p>
+        <div class="top-header">
+          <div class="left-header">
+            <div class="logo"> <a class="logo__link" href="#"> <img src="../../../img/logo.png" alt="Logo"></a></div>
+            <div class="location">      
+              <svg width="32" height="32" alt="Logo">
+                <use xlink:href="../../../img/sprites/sprite.svg#city"></use>
+              </svg>
+              <p class="location__title">Любой регион</p>
+            </div>
+            <div class="search">
+              <input class="search__input" type="text" placeholder="Учебное заведение, специальность или профессия" autocomplete="off">
+              <svg class="search__img" width="32" height="32" alt="search icon">
+                <use xlink:href="../../../img/sprites/sprite.svg#search"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="right-header"> 
+            <div class="favorites">
+              <svg class="favorites__img" width="32" height="32" alt="favorite icon">
+                <use xlink:href="../../../img/sprites/sprite.svg#like"></use>
+              </svg>
+              <p class="favorites__number">1</p>
+            </div>
+            <div class="profile">
+              <p class="profile__text">Екатерина</p><img class="profile__img" src="../../../img/avatar.png" alt="avatar">
+            </div>
+          </div>
         </div>
-        <div class="search">
-          <input class="search__input" type="text"><img class="search__img" src="../../../img/svg/search.svg" alt="search icon">
-        </div>
+        <nav class="header-menu">
+          <ul class="header-menu__list">
+            <li><a class="header-menu__link" href="#">Вузы</a></li>
+            <li><a class="header-menu__link" href="#">Колледжи</a></li>
+            <li><a class="header-menu__link" href="#">Техникумы</a></li>
+            <li><a class="header-menu__link" href="#">Училища</a></li>
+            <li><a class="header-menu__link" href="#">Специальности</a></li>
+            <li><a class="header-menu__link" href="#">Профессии</a></li>
+            <li><a class="header-menu__link" href="#">Отзывы</a></li>
+            <li><a class="header-menu__link" href="#">Учебные заведения</a></li>
+            <li><a class="header-menu__link" href="#">Тест на </a></li>
+          </ul>
+          <svg class="header-menu__arrow" width="32" height="32" alt="arrow icon">
+            <use xlink:href="../../../img/sprites/sprite.svg#arrow"></use>
+          </svg>
+        </nav>
       </div>
     </header>
     <script src="js/vendor.js"></script>

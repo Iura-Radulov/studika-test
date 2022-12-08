@@ -1,11 +1,32 @@
 header.header 
   .container
-    .logo 
-      a.logo__link(href="#") 
-        img(src="../../../img/logo.png" alt="Logo")
-    .location       
-      img(src="../../../img/svg/city.svg" alt="Logo")
-      p.location__title Москва
-    .search
-      input.search__input(type="text")
-      img.search__img(src="../../../img/svg/search.svg", alt="search icon")
+    .top-header
+      .left-header
+        .logo 
+          a.logo__link(href="#") 
+            img(src="../../../img/logo.png" alt="Logo")
+        .location       
+          //- img(src="../../../img/svg/city.svg" alt="Logo")
+          svg(width="32" height="32" alt="Logo")
+            use(xlink:href="../../../img/sprites/sprite.svg#city")
+          p.location__title Любой регион
+        .search
+          input.search__input(type="text" placeholder="Учебное заведение, специальность или профессия" autocomplete="off")
+          svg.search__img(width="32" height="32" alt="search icon")
+            use(xlink:href="../../../img/sprites/sprite.svg#search")
+
+      .right-header  
+        .favorites
+          svg.favorites__img(width="32" height="32" alt="favorite icon")
+            use(xlink:href="../../../img/sprites/sprite.svg#like")
+          p.favorites__number 1
+        .profile
+          p.profile__text Екатерина
+          img.profile__img(src="../../../img/avatar.png" alt="avatar")
+    nav.header-menu
+      ul.header-menu__list
+        each name in ['Вузы', 'Колледжи', 'Техникумы', 'Училища', 'Специальности', 'Профессии', 'Отзывы', 'Учебные заведения', 'Тест на ']
+            li
+                a.header-menu__link(href="#")= name
+      svg.header-menu__arrow(width="32" height="32" alt="arrow icon")
+            use(xlink:href="../../../img/sprites/sprite.svg#arrow")
